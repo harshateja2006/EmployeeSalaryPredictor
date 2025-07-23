@@ -1,0 +1,68 @@
+/* style_light.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+html, body, .stApp, .block-container {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+:root {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f5f5f5;
+  --text-color: #000000;
+  --accent-color: #0f3460;
+  --button-bg: #0f3460;
+  --button-hover-bg: #1b5490;
+  --card-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, div, .css-10trblm, .css-1v0mbdj {
+  color: var(--text-color) !important;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--card-shadow);
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.card {
+  background-color: var(--secondary-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 2rem;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.social-icons a img {
+  transition: transform 0.3s ease;
+  margin: 0 10px;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+}
